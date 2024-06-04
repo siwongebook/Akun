@@ -1,1 +1,17 @@
-
+proxies:
+  - name: anom3 WS (CDN) NTLS
+    server: 104.17.3.81
+    port: 80
+    type: vmess
+    uuid: 23ace141-5d92-4ec0-89c0-c13b74d316b2
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: idc.corazon-vip.my.id
+    network: ws
+    ws-opts:
+      path: /whatever/vmess
+      headers:
+        Host: idc.corazon-vip.my.id
+    udp: true
